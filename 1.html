@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- para tag -->
+    <p>Lorem, ipsum.</p>
+    <!-- italic  -->
+    <em>Lorem, ipsum dolor.</em>
+    <!-- strong is use for heavy strong or highlight the word -->
+    <p>My cat is <strong>very</strong> grumpy.</p>
+    <!-- img tag don't have closing tag it is use for image -->
+    <img src="./OIP.jfif" alt="image of sunshine" />
+    <!-- anchor tag for hyperlink , target="_blank" for opening link in new tab, title will appears when hover -->
+    <a href="https://www.google.com/" title="Google" ,target="_blank">google</a>
+    <!-- using the disabled attribute prevents the end user from entering text into the input box -->
+    <input type="text" disabled />
+
+    <!-- text input is allowed, as it doesn't contain the disabled attribute -->
+    <input type="text" />
+    <ul>
+      <li>milk</li>
+      <li>tea</li>
+    </ul>
+    <ol>
+      <li>orange</li>
+      <li>Apple</li>
+    </ol>
+    <!-- emphasis tag  -->
+    <p>Lorem <em>Hello Lorem</em> ipsum dolor sit.</p>
+    <!-- strong tag  -->
+    <p>This liquid is <strong>highly toxic</strong>.</p>
+
+    <p>I am counting on you. <strong>Do not</strong> be late!</p>
+    <!-- strong tag and emphasis -->
+    <p>
+      This liquid is <strong>highly toxic</strong> — if you drink it,
+      <strong>you may <em>die</em></strong
+      >.
+    </p>
+
+    <!-- links -->
+    <a href="https://developer.mozilla.org/en-US/">
+      <img src="mdn_logo.svg" alt="MDN Web Docs" />
+    </a>
+    <!-- Description lists use a different wrapper than the other list types — <dl>;
+         in addition each term is wrapped in a <dt> (description term) element, 
+          and each description is wrapped in a <dd> (description definition) element -->
+    <dl>
+      <dt>soliloquy</dt>
+      <dd>
+        In drama, where a character speaks to themselves, representing their
+        inner thoughts or feelings and in the process relaying them to the
+        audience (but not to other characters.)
+      </dd>
+      <dt>monologue</dt>
+      <dd>
+        In drama, where a character speaks their thoughts out loud to share them
+        with the audience and any other characters present.
+      </dd>
+      <dt>aside</dt>
+      <dd>
+        In drama, where a character shares a comment only with the audience for
+        humorous or dramatic effect. This is usually a feeling, thought, or
+        piece of additional background information.
+      </dd>
+    </dl>
+    <dl>
+      <dt>aside</dt>
+      <dd>
+        In drama, where a character shares a comment only with the audience for
+        humorous or dramatic effect. This is usually a feeling, thought, or
+        piece of additional background information.
+      </dd>
+      <dd>
+        In writing, a section of content that is related to the current topic,
+        but doesn't fit directly into the main flow of content so is presented
+        nearby (often in a box off to the side.)
+      </dd>
+    </dl>
+
+    <!-- Multiple descriptions for one term -->
+    <!-- Note that it is permitted to have a single term with multiple descriptions, for example: -->
+
+    <dl>
+      <dt>aside</dt>
+      <dd>
+        In drama, where a character shares a comment only with the audience for
+        humorous or dramatic effect. This is usually a feeling, thought, or
+        piece of additional background information.
+      </dd>
+      <dd>
+        In writing, a section of content that is related to the current topic,
+        but doesn't fit directly into the main flow of content so is presented
+        nearby (often in a box off to the side.)
+      </dd>
+    </dl>
+    Blockquotes
+    <!-- If a section of block level content (be it a paragraph, multiple paragraphs, a list, etc.) 
+  is quoted from somewhere else, you should wrap it inside a <blockquote> element to signify this, 
+    and include a URL pointing to the source of the quote inside a cite attribute. For example,
+   the following markup is taken from the MDN <blockquote> element page: -->
+    <p>
+      The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+      <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+      an extended quotation.
+    </p>
+    <!-- it gives the space at starting -->
+    <p>Here is a blockquote:</p>
+    <blockquote
+      cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
+    >
+      <p>
+        The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+        <em>HTML Block Quotation Element</em>) indicates that the enclosed text
+        is an extended quotation.
+      </p>
+    </blockquote>
+    <!-- Inline quotations work in exactly the same way, except that they use the
+   <q> element. For example, 
+  the below bit of markup contains a quotation from the MDN <q> page: -->
+    <p>
+      The quote element — <code>&lt;q&gt;</code> — is
+      <q cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/q">
+        intended for short quotations that don't require paragraph breaks.
+      </q>
+    </p>
+    <!-- abbriviations -->
+    <p>
+      We use <abbr>HTML</abbr>, Hypertext Markup Language, to structure our web
+      documents.
+    </p>
+
+    <p>
+      I think <abbr title="Reverend">Rev.</abbr> Green did it in the kitchen
+      with the chainsaw.
+    </p>
+
+    <!-- <address></address> tag  HTML has an element for marking up contact
+   details — <address>. This wraps
+   around your contact details, for example:-->
+
+    <address>
+      <p>
+        Chris Mills<br />
+        Manchester<br />
+        The Grim North<br />
+        UK
+      </p>
+
+      <ul>
+        <li>Tel: 01234 567 890</li>
+        <li>Email: me@grim-north.co.uk</li>
+      </ul>
+    </address>
+
+    <!-- You will occasionally need to use superscript and subscript 
+    when marking up items like dates, chemical formulae, and mathematical 
+    equations so they have the correct meaning. 
+    The <sup> and <sub> elements handle this job. For example: -->
+    <p>My birthday is on the 25<sup>th</sup> of May 2001.</p>
+    <p>
+      Caffeine's chemical formula is
+      C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>.
+    </p>
+    <p>If x<sup>2</sup> is 9, x must equal 3 or -3.</p>
+
+    <!-- Representing computer code
+There are a number of elements available for marking up computer code using HTML:
+
+<code>: For marking up generic pieces of computer code.
+<pre>: For retaining whitespace (generally code blocks) — if you use indentation or excess whitespace inside your text, browsers will ignore it and you will not see it on your rendered page. If you wrap the text in <pre></pre> tags however, your whitespace will be rendered identically to how you see it in your text editor.
+<var>: For specifically marking up variable names.
+<kbd>: For marking up keyboard (and other types of) input entered into the computer.
+<samp>: For marking up the output of a computer program.
+Let's look at examples of these elements and how they're used to represent computer code. If you want to see the full file, take a look at the other-semantics.html sample file. You can download the file and open it in your browser to see for yourself, but here is a snippet of the code: -->
+    <pre><code>const para = document.querySelector('p');
+
+  para.onclick = function() {
+    alert('Owww, stop poking me!');
+  }</code></pre>
+
+    <p>
+      You shouldn't use presentational elements like
+      <code>&lt;font&gt;</code> and <code>&lt;center&gt;</code>.
+    </p>
+
+    <p>
+      In the above JavaScript example, <var>para</var> represents a paragraph
+      element.
+    </p>
+
+    <p>
+      Select all the text with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd>.
+    </p>
+
+    <pre>$ <kbd>ping mozilla.org</kbd>
+  <samp>PING mozilla.org (63.245.215.20): 56 data bytes
+  64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
+    <!-- time  -->
+    <time datetime="2016-01-20">20 January 2010</time>
+    <!-- Standard simple date -->
+    <time datetime="2016-01-20">20 January 2016</time>
+    <!-- Just year and month -->
+    <time datetime="2016-01">January 2016</time>
+    <!-- Just month and day -->
+    <time datetime="01-20">20 January</time>
+    <!-- Just time, hours and minutes -->
+    <time datetime="19:30">19:30</time>
+    <!-- You can do seconds and milliseconds too! -->
+    <time datetime="19:30:01.856">19:30:01.856</time>
+    <!-- Date and time -->
+    <time datetime="2016-01-20T19:30">7.30pm, 20 January 2016</time>
+    <!-- Date and time with timezone offset -->
+    <time datetime="2016-01-20T19:30+01:00">
+      7.30pm, 20 January 2016 is 8.30pm in France
+    </time>
+    <!-- Calling out a specific week number -->
+    <time datetime="2016-W04">The fourth week of 2016</time>
+  </body>
+</html>
